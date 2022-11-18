@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koch Snowflake</title>
+    <style>
+        body {background-color: powderblue;}
+        h1  {
+            color: rgba(12, 133, 30, 0.877);
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+    </style>
+</head>
+<body>
+    <h1>Koch Snowflake Order {{ order }}</h1>
+    <img src="{{url_for('static', filename='koch_snowflake.png')}}" alt="Koch Snowflake">
+</body>
+</html>
