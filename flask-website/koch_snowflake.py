@@ -50,6 +50,6 @@ def draw_snowflake(order:int):
     for pos in ['right', 'top', 'bottom', 'left']:
         plt.gca().spines[pos].set_visible(False)
     
-    fname='flask-website\static\koch_snowflake.png'
+    fname='static/koch_snowflake.png'
     format='png'
     plt.savefig(fname=fname,format=format,transparent=True)
