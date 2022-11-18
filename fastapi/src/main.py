@@ -9,8 +9,13 @@ def main():
     plt.figure(figsize=(8,8))
     plt.axis('equal')
     plt.fill(x,y,'g')
+
     
-    fname='../artifacts/koch-snowflake.png'
+    ax = plt.gca()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+    
+    fname='../artifacts/koch_snowflake.png'
     format='png'
     plt.savefig(fname=fname,format=format)
 

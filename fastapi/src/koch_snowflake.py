@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def koch_snowflake(order, scale=10):
     """
@@ -33,3 +34,18 @@ def koch_snowflake(order, scale=10):
     points = _koch_snowflake_complex(order)
     x, y = points.real, points.imag
     return x, y
+
+def draw_snowflake(order:int):
+    '''Draw snowflake and save it as png.'''
+    x,y = koch.koch_snowflake(order)
+    plt.figure(figsize=(8,8))
+    plt.axis('equal')
+    plt.fill(x,y,'g')
+
+    ax = plt.gca()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+    
+    fname='koch_snowflake.png'
+    format='png'
+    plt.savefig(fname=fname,format=format)
