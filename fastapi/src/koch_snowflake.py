@@ -37,7 +37,7 @@ def koch_snowflake(order, scale=10):
 
 def draw_snowflake(order:int):
     '''Draw snowflake and save it as png.'''
-    x,y = koch.koch_snowflake(order)
+    x,y = koch_snowflake(order)
     plt.figure(figsize=(8,8))
     plt.axis('equal')
     plt.fill(x,y,'g')

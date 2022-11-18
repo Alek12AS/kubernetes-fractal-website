@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fractals-website
+  labels:
+    app: fractals-website
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fractals-website
+  template:
+    metadata:
+      labels:
+        app: fractals-website
+    spec:
+      containers:
+      - name: fractals-website
+        image: flask-website-fractals
+        ports:
+        - containerPort: 80
