@@ -1,3 +1,5 @@
+'''Run Flask Framework.
+'''
 from flask import Flask
 from views import views
 
