@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
       - name: fractals-website
-        image: flask-website-fractals
+        image: fractals-website
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
