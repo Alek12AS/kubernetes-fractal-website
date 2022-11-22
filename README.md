@@ -43,7 +43,7 @@ kubectl create -f fractals-website-service.yaml
 ### 7. Create a Service Tunnel
 In order to access the website from outside the minikube cluster run this command in a separate terminal, which you have to keep open
 ```pwsh
-minikube service fractals-website --url
+minikube service fractals-website-service --url
 ```
 
 ### 8. Demo the Website
