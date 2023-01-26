@@ -7,8 +7,8 @@ koch_snowflake
 draw_snowflake
     Saves the graph as a png.
 '''
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np # pylint: disable=import-error
+import matplotlib.pyplot as plt # pylint: disable=import-error
 
 def koch_snowflake(order: int, scale=10):
     """

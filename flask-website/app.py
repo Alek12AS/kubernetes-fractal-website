@@ -1,6 +1,6 @@
 '''Run Flask Framework.
 '''
-from flask import Flask
+from flask import Flask # pylint: disable=import-error
 from views import views
 
 app = Flask(__name__)

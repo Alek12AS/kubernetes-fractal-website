@@ -1,6 +1,6 @@
 '''Define the website routes and the appropriate responses.
 '''
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request # pylint: disable=import-error
 from koch_snowflake import draw_snowflake
 
 views = Blueprint(__name__, 'views')
