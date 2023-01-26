@@ -5,7 +5,6 @@ metadata:
   labels:
     app: fractals-website
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: fractals-website
@@ -16,7 +15,11 @@ spec:
     spec:
       containers:
       - name: fractals-website
-        image: fractals-website
-        imagePullPolicy: Never
+        image: alexandru4278/fractals-website:v1.0.0
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m
